@@ -9,7 +9,7 @@
       
       function clickTd(id, isRadioButton) {
           let match = id.match(/radio(\d+)_(.)/);
-          let idNum = match[1];
+          let idNum = +match[1];
           let evalChar = match[2];
           let resultNum = Math.floor(idNum / 40) + 1;
           let resultDiv = document.getElementById("result" + resultNum);
